@@ -1,0 +1,42 @@
+1.主流浏览器的内核
+
+IE:      Trident
+firefox: Gecko
+Safari:  webkit
+chrome:  Blink(webkit的分支)
+
+2.移动端浏览器内核主要说的是系统内置浏览器的内核
+Android手机而言,使用率最高的就是webkit的内核,大部分国产浏览器宣称自己的内核,基本上也是属于webkit的二次开发
+iOS系统,一般是Safari,webkit内核
+
+3.web标准(w3c->万维网联盟)
+
+1)web标准构成:
+主要包括结构(HTML),表现(CSS),行为(JavaScript)三个方面
+
+4.浏览器内核拓展
+浏览器内核包括两部分,渲染引擎和js引擎.渲染引擎负责读取网页内容,整理讯息,计算网页的显示方式并显示页面,js引擎是解析执行js获取网页的动态效果,后来js引擎越来越独立,内核就倾向于只指倾向于渲染引擎
+
+5.html骨架
+
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  </body>
+</html>
+
+6.<html lang="zh-CN">  <meta charset="UTF-8"> 这两行代码的含义
+
+第一行:
+告诉计算机我们(程序猿是按照中文来写的)
+第二行:
+告诉计算机/浏览器我们是按照UTF-8的字符集来进行存储跟显示的
+
+补: 
+简体中文:gb2312    guo biao
+繁体中文:BIG5   
+GBK:   包含简体中文跟繁体中文   guo biao k (扩展)
+UTF-8:基本包含全世界所有国家需要用到的字符
+
