@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 字体大小的单位:
+        相对长度单位:
+        em:相对于当前对象内文本的字体尺寸
+        px:像素 ----------->最常用
+        绝对长度单位:
+        in:英寸
+        cm:厘米
+        mm:毫米
+        pt:点
+
+        谷歌浏览器默认文字大小为16px,但是各个浏览器默认的字体大小不同,所以一般给body一个固定的大小
+        */
+        body {
+            font-size: 16px;
+        }
+        /* 
+        font-family:字体
+        1.网页中常用的字体有宋体、微软雅黑、黑体等,
+        2.可以同时指定多个字体,中间用逗号隔开,浏览器在执行时从第一个开始,如果不支持就会尝试下一种字体,如果都不支持则会使用该电脑默认的字体
+        3.尽量使用系统默认字体,保证在任何用户的浏览器中都能正确显示
+        4.中文字体用引号
+        */
+        .title {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif,"微软雅黑","黑体";
+        }
+        /* Unicode字体:
+        在css设置字体时是可以设置中文的,但是在一些比较早的编码里面可能会不匹配产生乱码的情况
+        xp系统不支持类似微软雅黑的中文.
+        
+        解决:
+        1.可以使用英文来代替,比如微软雅黑 font-family:"Microsoft YaHei"
+        2.在css直接使用Unicode编码来写字体名称可以避免乱码,使用Unicode写中文字体名称,浏览器是可以正确解析的
+        */
+        h3 {
+            font-family: "\5B8B\4F53";/*宋体*/
+        }
+        h2 {
+            font-family: "宋体";
+        }
+        /* 设置字体加粗 */
+        .bold {
+            font-weight: 600; /*normal 正常字体  num为400 
+            bold 粗体,相当于num为700
+            */
+        }
+        /* 设置字体倾斜 平时很少使用,值一般有两个,一个italic斜体, 一个nomal正常 */
+        #xie {
+            /* italic 斜体 */
+            font-style: italic;
+        }
+        /* 让倾斜的字体不倾斜 */
+        em{
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p class="title">是谁的心啊❤</p>
+    <p>我是unicode宋体</p>
+    <p>我是宋体</p>
+    <div class="bold">
+        我是粗体
+    </div>
+    <p id="xie">我是斜体</p>
+    <em>我也是斜体,但是我变了</em>
+</body>
+</html>

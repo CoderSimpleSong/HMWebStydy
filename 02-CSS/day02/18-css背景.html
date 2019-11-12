@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css背景</title>
+    <style>
+        .bg {
+            width: 800px;
+            height: 500px;
+            background-color: pink;/*背景颜色 默认值为透明色*/
+            background-image: url(images/l.jpg);/* 背景图片  默认无背景图片 注:url不要写引号  优先级大于背景颜色*/
+            background-repeat: no-repeat;/*背景平铺, 默认就是平铺的*/
+
+
+
+            /*背景图片位置, 值可以是方位名词:左上,右上等,两个值顺序没关系,如果只指定了一个值,另外一个值默认为center  
+            也可以是精确的数值: 例 10px  20px,如果只写一个值,那么这个值为x的值,y的值为垂直居中的  
+            如果两种值混着用,则第一个肯定是x,第二个一定是y
+            */
+
+
+            /* background-position: center center; */
+            background-position: 10px center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        123
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>链接伪类选择器</title>
+    <style>
+        /* 正常状态 */
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+        /* 已经访问过 */
+        a:visited {
+            color: green;
+        }
+        /* 鼠标悬停在上面 */
+        a:hover {
+            color: blue;
+        }
+        /* 链接选中的状态   touchDown */
+        a:active {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        伪类选择器
+        作用:向某些选择器添加特殊的效果,比如给链接添加特殊效果,比如选择第一个,第n个元素
+        伪类选择器很多,比如链接伪类,结构伪类等. 
+     -->
+     <!-- 链接伪类选择器
+
+     a:link  未访问的链接
+     a:visited 已访问的链接
+     a:hover 鼠标移动到链接上
+     a:active 选定的链接  
+     写的时候尽量按照顺序  lvha  否则可能引起错误 -->
+
+     <a href="https://www.hao123.com/">百度</a>
+     <a href="https://www.weixin.com/">百度</a>
+     <a href="https://www.qq.com/">百度</a>
+
+</body>
+</html>

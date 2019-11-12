@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字体综合写法</title>
+    <style>
+        /* 综合写法,直接写font 必须按照下面的顺序来,不能调换顺序 
+        倾斜跟粗体可以省略,但是font-size与font-family一定不能省略
+        */
+        /* 顺序: font-style font-weight font-size/line-height font-family */
+        p{
+            font: italic 700 20px "宋体";
+            /* font:     20px "宋体";  这种是可以的 一般都这样写 */
+            /* font: normal 200; 这样写是不可以的, 字号跟字体是必须要有的 */
+        }
+    </style>
+</head>
+<body>
+    <p>我是字体</p>
+</body>
+</html>

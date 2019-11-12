@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>链接导航栏案例</title>
+    <style>
+        .nav {
+            text-align: center;/* 这句话对行内元素 以及 行内块都是有效果的(孩子)*/
+        }
+        .nav a{
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            line-height: 50px;
+            /* font: italic 700 20px "宋体";  直接这样写的话 文字不居中?*/
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            background: transparent url(images/bgc.png) no-repeat scroll center center;
+        }
+        .nav a:hover {
+            background-image: url(images/bg.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+    </div>
+</body>
+</html>
