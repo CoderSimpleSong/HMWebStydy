@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>常用边框的写法</title>
+    <style>
+    div{
+        width: 400px;
+        height: 400px;
+        border-top: 1px orange dashed;
+        border-left: 1px green solid;
+        border-bottom: 1px red dotted;
+        border-right: 1px yellow solid;
+    }
+    /*给其他标签修改边框属性*/
+    input {
+        /* border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom:  2px dashed red; */
+
+        /* 上面四句代码的另一种写法 */
+
+        border: none;
+        border-bottom: 1px dashed yellow;/*这两行代码要按顺序写,不然会被层叠掉*/
+    }
+
+    </style>
+</head>
+<body>
+    <!-- 通常盒子不是四个边都需要边框的
+    要学会给四个边分别加边框
+    -->
+    <div></div>
+
+    用户名: <input type="text" placeholder="用户名"> <br>
+    密码: <input type="text">
+
+</body>
+</html>
