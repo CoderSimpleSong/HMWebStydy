@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距合并</title>
+    <style>
+    .top,
+    .bottom {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin-bottom: 100px;
+    }
+    .bottom {
+        background-color: orange;
+        margin-top: 50px;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        两个盒子的垂直外边距,取的是大的一个的值,  如果是两个水平的则会两个外边距叠加
+        解决方法:以后垂直方向的两个盒子,只给一个盒子设置上/下边距,另一个不给
+     -->
+    <div class="top"></div>
+    <div class="bottom"></div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻列表综合案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            width: 298px;
+            height: 198px;
+            border: 1px solid #ccc;
+            background: transparent url(images/line.jpg) repeat;
+            margin: 100px auto;
+            padding:15px;
+        }
+        .father h2 {
+            font-size: 18px;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+            margin-bottom: 10px;
+        }
+        li {
+            /* 取消列表样式 */
+            list-style: none;
+        }
+        .father ul li {
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px dashed #ccc;
+            background: url(images/arr.jpg) no-repeat 5px center;
+        }
+        .father ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 13px;
+            margin-left:20px ;
+        }
+        .father ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <h2>细心文章/New Articles</h2>
+        <ul>
+            <li><a href="#">北京招聘,平面设计,php</a></li>
+            <li><a href="#">体验JavaScript的魅力</a></li>
+            <li><a href="#">jquery时节来临</a></li>
+            <li><a href="#">网页设计师的梦想</a></li>
+            <li><a href="#">jquery中的链式编程是什么</a></li>
+        </ul>
+    </div>
+</body>
+</html>

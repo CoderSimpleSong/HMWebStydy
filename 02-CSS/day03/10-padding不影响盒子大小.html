@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>padding不影响盒子大小</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        p {
+            /* width: 200px; */
+            height: 30px;
+            background-color: purple;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 特殊情况,如果这个盒子,没有宽度,则padding不会撑开盒子,如果这个盒子制定了宽度,则会把盒子撑开 这里当做一个小技巧使用,后面会省去很大的麻烦-->
+        <p>哒哒哒</p>
+    </div>
+</body>
+</html>

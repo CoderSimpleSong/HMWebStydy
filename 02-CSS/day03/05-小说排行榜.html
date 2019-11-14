@@ -6,11 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小说排行榜</title>
     <base href="" target="_blank">
+    <style>
+        /*td th 与table的边框重叠,导致border为2px*/
+        table,
+        td,
+        th {
+            border: 1px solid deeppink;
+            border-collapse: collapse;/*解决td th table 表格边框重叠变粗的问题*/
+        }
+        .hotpink {
+            background-color:hotpink;
+        }
+        .pink {
+            background-color: pink;
+        }
+    </style>
 </head>
 <body>
-    <table border="1" align="center" cellspacing="0" width="500" height="249">
+    <table  align="center" cellspacing="0" width="500" height="249">
         <caption><h3>小说排行榜</h3></caption>
-        <tr>
+        <tr class="hotpink">
             <th>排名</th>
             <th>关键词</th>
             <th>趋势</th>
@@ -32,7 +47,7 @@
                 <a href="https://www.hao123.com/">百科</a>
             </td>
         </tr>
-        <tr>
+        <tr class="pink">
             <td>2</td>
             <td>盗墓笔</td>
             <td>
@@ -60,7 +75,7 @@
                     <a href="https://www.hao123.com/">百科</a>
             </td>
         </tr>
-        <tr>
+        <tr class="pink">
             <td>4</td>
             <td>东游记</td>
             <td>
@@ -89,7 +104,7 @@
             </td>
             </td>
         </tr>
-        <tr>
+        <tr class="pink">
             <td>6</td>
             <td>水浒传</td>
             <td>

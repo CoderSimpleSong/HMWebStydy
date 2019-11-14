@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 第一种解决方案 给父亲设置上边框*/
+            /* border-top: 1px solid transparent; */
+
+            /* 第二种解决方案  给父亲指定一个padding值 */
+            /* padding-top: 1px; */
+            
+
+            /* 第三种 给父亲设置overflow:hidden */
+            overflow: hidden;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            margin-top: 50px;/*嵌套关系的 垂直外边距会合并*/
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        考虑盒子模型布局稳定性,大部分情况下,外边距,内边距是可以混用的. 
+        建议.优先考虑宽度, 其次使用padding(要做加减计算),最后考虑margin
+     -->
+
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

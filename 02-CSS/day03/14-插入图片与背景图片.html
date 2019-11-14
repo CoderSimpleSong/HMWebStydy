@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pic,
+        .bg {
+            width: 500px;
+            height: 500px;
+            border: 1px solid pink ;
+        }
+        .bg {
+            background:  url(images/3.jpg) no-repeat;
+            background-position: 30px 30px;/*只能使用bgp来调整位置*/
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    插入图片使用场景: 我们用的最多 比如产品展示类 移动位置只能靠盒模型(这个使用的多)
+    背景图片使用场景: 我们一般用于小图标背景 或者超大背景图片 
+-->
+<div class="pic">
+    <!-- 插入图片只能通过margin 与padding 设置图片位置 -->
+    <img src="images/3.jpg" alt="">
+</div>
+<div class="bg"></div>
+</body>
+</html>

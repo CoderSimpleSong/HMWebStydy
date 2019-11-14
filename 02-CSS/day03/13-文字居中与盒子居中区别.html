@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字居中与盒子居中</title>
+    <style>
+        div {
+            width: 600px;
+            height: 300px;
+            background-color: pink;
+            /*块级盒子水平居中*/
+            margin: 50px auto;
+            /* 盒子里面的文字居中对齐 让盒子里面的行内元素,行内块元素居中对齐*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        文字居中:text-align:center 而且还可以让行内元素和行内块居中(文字类的)
+        块级盒子居中: margin:auto
+     -->
+     <div>
+         稳住 <strong>我们能赢</strong> <input type="text">
+     </div>
+     <div></div>
+</body>
+</html>
