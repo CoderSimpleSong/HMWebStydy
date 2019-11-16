@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+        .clearfix {
+            *zoom: 1;/* ie6, ie7 专门清除浮动的样式*/
+        }
+        .one {
+            width: 600px;
+            background-color: pink;
+        }
+        .damao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .ermao {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+        }
+        .two {
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        四种方法:
+        1.额外标签法
+        2.给父级添加overflow方法
+        3.使用after伪元素法
+        4.使用双伪元素法
+     -->
+     <!-- 3.after伪元素消除浮动 (额外标签法的升级版)
+        优点:符合闭合浮动思想,结构语义化正确
+        缺点:由于ie6,ie7不支持:after,使用zoom:1出发hasLayout
+    -->
+    <div class="one clearfix">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+    </div>
+    <div class="two">
+    </div>
+</body>
+</html>

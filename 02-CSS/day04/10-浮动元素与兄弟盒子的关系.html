@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+        }
+        .damao {
+            width: 150px;
+            height: 150px;
+            background-color: skyblue;
+        }
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.都是标准流,上下显示
+        2.damao浮动,ermao不浮动,ermao会跑到damao的下面
+        3.damao,ermao都浮动,则在同一行显示
+        4.damao不浮动,ermao浮动,则展示效果与标准流的结果相同
+     -->
+    <div class="father">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+    </div>
+    结论:浮动只会影响当前或者是后面的标准流盒子,不会影响前面的标准流盒子
+    建议:一个盒子里面有多个子盒子,如果有一个盒子浮动了,则其他的也应该设置浮动,防止出现问题
+</body>
+</html>

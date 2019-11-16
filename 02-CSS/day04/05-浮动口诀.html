@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动口诀</title>
+    <style>
+        .one {
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+        .two {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- float  浮 漏 特 -->
+<!-- 
+1.浮
+元素设置浮动之后,会漂浮在普通流的上面,不占位置,脱标 
+2. 漏
+浮动的盒子不占有原来的位置,下面的盒子就会占据他的位置,浮动的盒子脱标
+3. 特
+浮动的特性:float属性会改变元素的display属性.任何元素都可以浮动,浮动元素会生成一个块级框,而不论他本身是何种元素,生成的块级框和我们前面的行内块及其相似,在一行内显示,但是中间没有缝隙
+-->
+注:如果父级盒子装不下浮动的盒子,则多出的盒子会另起一行显示
+<span class="one">呵呵</span>
+<div class="two"></div>
+
+</body>
+</html>

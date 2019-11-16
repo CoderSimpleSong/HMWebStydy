@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            .one {
+                width: 600px;
+                background-color: pink;
+                overflow: hidden;/*hidden scrol auto 值都可以消除浮动*/
+            }
+            .damao {
+                float: left;
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+            }
+            .ermao {
+                float: left;
+                width: 300px;
+                height: 300px;
+                background-color: brown;
+            }
+            .two {
+                width: 500px;
+                height: 500px;
+                background-color: skyblue;
+            }
+    </style>
+</head>
+<body>
+    <!-- 
+        四种方法:
+        1.额外标签法
+        2.给父级添加overflow方法
+        3.使用after伪元素法
+        4.使用双伪元素法
+     -->
+     <!-- 2.给父级添加overflow方法
+        优点:代码简洁(也可以解决塌陷?)
+        缺点:内容增多时,容易造成不会自动换行导致内容被隐藏掉的问题,无法显示需要溢出的元素
+    -->
+    <div class="one">
+            <div class="damao"></div>
+            <div class="ermao"></div>
+        </div>
+        <div class="two">
+        </div>
+</body>
+</html>
