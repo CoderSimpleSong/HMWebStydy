@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* margin: 100px; */
+            /* 定位 = 定位模式  + 边偏移 */
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .two {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+    2.相对定位:relative
+    1.元素相对于它在标准流中原来的位置来说的 (自恋型)
+    2.原来在标准流的区域继续占有,后面的盒子仍然以标准流的方式对待它
+    <div></div>
+    <div class="two"></div>
+</body>
+</html>

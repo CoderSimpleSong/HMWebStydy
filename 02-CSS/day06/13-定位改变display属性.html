@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            /* 前面学过的改变display的方法
+            1.display:inline-block
+            2.float:left(行内块,无缝隙,脱标)
+             */
+             /* 绝对定位,固定定位也能转换 */
+             position: absolute;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        总结:
+        1.绝对定位和固定定位也和浮动类似,默认转换的特性为行内块(内容撑开盒子)
+        2.一个行内元素,如果设置了浮动,绝对定位或者固定定位,不用转黄,就可以直接给这个盒子设置宽高
+        3.浮动元素,绝对定位或固定定位的元素都不会触发外边距合并的问题(塌陷)
+        4.设置了定位的盒子由于变成了行内块,所以一般是要给宽度的
+     -->
+    <div>11111</div>
+</body>
+</html>

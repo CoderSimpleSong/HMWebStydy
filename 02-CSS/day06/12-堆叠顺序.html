@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>堆叠顺序</title>
+    <style>
+        .damao,
+        .ermao,
+        .sanmao {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .ermao {
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            background-color: green;
+        }
+        .sanmao {
+            top: 100px;
+            left: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 后来者居上,后面来的把前面的压住 默认情况下
+    
+    1.在使用定位布局时,可能就出现了上面的情况,盒子重叠.默认 后来者居上,
+    应用z-index层叠等级属性可以调整盒子的堆叠顺序.
+    2.z-index: z就是面向我们的方向, 取值范围正整数,负整数,或者0,默认是0,数值越大,盒子越靠上,如果属性值相同,则后来者居上,数字后面不能加单位
+    3.z-index只能应用于相对定位,绝对定位和固定定位的元素,其他的无效
+    -->
+    <div class="damao"></div>
+    <div class="ermao"></div>
+    <div class="sanmao"></div>
+</body>
+</html>
