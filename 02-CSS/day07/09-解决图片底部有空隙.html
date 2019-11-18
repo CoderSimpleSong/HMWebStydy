@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>解决图片底部有空隙</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            border: 1px solid pink;
+        }
+        img {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <!-- 造成这个问题的原因就是因为,垂直对齐方式默认是基线对齐,图片底部是与文字的基线对齐的,虽然这里没有文字,但是还是会预留出来,导致图片底部会出现空白缝隙 
+
+    解决方案:
+        1.图片设置非基线对齐
+        2.设置图片为块级元素,因为垂直对齐方式(vertical-align)对块级元素是无效的
+
+-->
+    <div>
+        <img src="images/3.jpg" alt="">
+    </div>
+</body>
+</html>

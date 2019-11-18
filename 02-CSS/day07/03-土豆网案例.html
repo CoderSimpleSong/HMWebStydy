@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .pic {
+            position: relative;
+            width: 222px;
+            height: 220px;
+            margin: 100px auto;
+        }
+        .pic .cover {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 222px;
+            height: 220px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .pic .cover img {
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            left: 50%;
+            margin-left: -17px;
+        }
+        .pic a:hover .cover {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <a href="#">
+            <div class="cover">
+                <img src="images/arr.png" alt="">
+            </div>
+            <img src="images/3.jpg" alt="">
+        </a>
+    </div>
+</body>
+</html>

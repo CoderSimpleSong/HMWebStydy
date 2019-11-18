@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>微信导航栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .abc {
+            width: 600px;
+            margin: 53px auto;
+        }
+        .nav {
+            height: 53px;
+            background: url(images/wx.jpg) repeat-x;
+        }
+        .logo {
+            display: inline-block;
+            margin-left: 355px;
+            width: 91px;
+            height: 42px;
+            padding-top: 11px;
+            background: url(images/dNEBuK6.png) no-repeat center;
+        }
+        .nav ul {
+            display: inline-block;
+            margin-left: 50px;
+        }
+        li {
+            list-style: none;
+        }
+        .nav ul li {
+            float: left;
+            padding: 10px;
+        }
+        .nav ul li a {
+            display: inline-block;
+            color: white;
+            height: 33px;
+            line-height: 33px;
+            padding-left: 15px;
+            font-size: 14px;
+            text-decoration: none;
+            background: url(images/to.png) no-repeat;
+        }
+        span {
+            display: inline-block;
+            height: 33px;
+            padding-right: 15px;
+            background: url(images/to.png) no-repeat center right;
+        }
+        .nav ul li a:hover {
+            background: url(images/ao.png) no-repeat;
+        }
+        .nav ul li a:hover span {
+            background: url(images/ao.png) no-repeat center right;
+            font-weight: 250;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"></div>
+        <ul>
+            <li><a href="#"><span>首页</span></a></li>
+            <li><a href="#"><span>帮助与反馈</span></a></li>
+            <li><a href="#"><span>公众平台</span></a></li>
+            <li><a href="#"><span>开发平台</span></a></li>
+            <li><a href="#"><span>微信支付</span></a></li>
+            <li><a href="#"><span>微信网页版</span></a></li>
+            <li><a href="#"><span>表情开发平台</span></a></li>
+            <li><a href="#"><span>微信广告</span></a></li>
+        </ul>
+    </div>
+    <div class="abc">
+        <img src="images/abcd.jpg" alt="">
+    </div>
+    <div class="abc">
+        <img src="images/abcd.jpg" alt="">
+    </div>
+    <div class="abc">
+        <img src="images/abcd.jpg" alt="">
+    </div>
+</body>
+</html>

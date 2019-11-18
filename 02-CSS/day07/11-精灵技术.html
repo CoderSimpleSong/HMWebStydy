@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>精灵技术</title>
+    <style>
+        .icon1 {
+            width: 23px;
+            height: 23px;
+            background: url(images/index.png) no-repeat 0 -107px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 精灵技术(sprite--雪碧?) -->
+    <!-- 为什么要用精灵技术?
+    因为每个小图标都要去服务器请求的话,会有很多请求,增加了服务器的压力,所以将小图片整个切为一张,减少了服务器的压力 
+   有效的减少了服务器接收和发送请求的次数,提高了页面的加载速度
+-->
+
+    <!-- 什么是精灵图?
+    一些背景图像整合到一张大图中,这张大图就是精灵图 -->
+
+    <!-- 精灵图的核心就是背景定位(background-position)  针对背景图!!!-->
+
+    <div class="icon1"></div>
+</body>
+</html>
