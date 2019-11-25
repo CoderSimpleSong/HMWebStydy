@@ -1,0 +1,246 @@
+/* 首页的样式 */
+/* main部分 */
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 219px;
+    margin-top: 10px;
+}
+.focus {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 455px;
+    background: purple;
+}
+.arrow_l,
+.arrow_r {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, .3);
+}
+.arrow_r {
+    right: 0;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    /* background: white; */
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+/* news 模块 */
+.news {
+    height: 163px;
+    border: 1px solid #ccc;
+}
+
+.news_hd {
+    height: 32px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #ccc;
+    font-size: 14px;
+    line-height: 32px;
+}
+.news_hd a{
+    float: right;
+    font-size: 12px;
+}
+
+.news_bd {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.news_bd li {
+    height: 23px;
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 208px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.lifeservice ul {
+    width: 252px;
+}
+.lifeservice li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: url(../img/jian.jpg) no-repeat scroll right top;
+}
+.lifeservice li a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+.service_icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 10px auto;
+    background: url(../img/icons.png) no-repeat scroll -17px -16px;
+}
+.lifeservice li p {
+    text-align: center;
+}
+.bargain {
+    height: 75px;
+    margin-top: 5px;
+}
+/* 推荐服务模块 */
+.recommend {
+    height: 163px;
+    margin-top: 10px;
+}
+.recommend_hd {
+    width: 200px;
+    height: 163px;
+    background: #5c5251;
+    text-align: center;
+}
+.recommend_hd img {
+    margin: 30px 0 10px 0 ;
+}
+.recommend_hd h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+}
+.recommend_bd {
+    width: 1000px;
+    height: 163px;
+    background: #ebebeb;
+}
+.recommend_bd li {
+    float: left;
+    width: 249px;
+    height: 145px;
+    margin-top: 10px;
+    border-right: 1px solid #ccc;
+}
+.recommend_bd li img {
+    width: 249px;
+}
+.recommend_bd  .last {
+    border-right: none;
+}
+
+/* 楼层区 */
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #e33333;
+    margin-top: 25px;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+.tab_list {
+    line-height: 31px;
+}
+.tab_list li {
+    float: left;
+}
+.tab_list li a {
+    padding: 0 15px;
+}
+/* 家电的内容部分 */
+.box_bd {
+    height: 360px;
+}
+.w209 {
+    width: 209px;
+    background: #f9f9f9;
+}
+.w329 {
+    width: 329px;
+}
+.box_bd li {
+    overflow: hidden;
+}
+.box_bd img {
+    transition: all .2s;
+}
+.box_bd img:hover {
+    margin-left: 8px;
+}
+.w219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+.w220 {
+    width: 220px;
+    border-right: 1px solid #ccc;
+}
+.tab_con li{
+    float: left;
+    height: 360px;
+}
+.tab_con_item {
+    border-bottom: 1px solid #ccc;
+}
+.tab_con_list {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.tab_con_list li{
+    float: left;
+    width: 86px;
+    height: 32px;
+    margin-left: 10px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* 左侧固定的盒子 */
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -686px;
+    width: 66px;
+}
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #e33333;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+}
+.fixedtool .current {
+    color: white;
+    background: #e33334;
+}
+.fixedtool li:hover {
+    background: #e33333;
+    color: white;
+}

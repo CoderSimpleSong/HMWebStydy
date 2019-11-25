@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>过度动画</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            background: orange;
+            /* 过度动画  动画属性  动画时间   动画过程  等待时间 */
+            /* 多组属性用逗号隔开 */
+            /* transition: width 1s  ease-in 1s, height 1s ease 1s;
+             */
+             /* 简写, 过度写在本身上 */
+             transition: all 1s ease-in 0s;
+        }
+        div:hover {
+            width: 800px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

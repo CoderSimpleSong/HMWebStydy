@@ -1,0 +1,288 @@
+/* 详情页样式 */
+.de_container {
+    margin-top: 20px;
+}
+.crumb_wrap {
+    height: 25px;
+}
+/* 面包屑导航 */
+.crumb_wrap a {
+    margin-right: 10px;
+}
+/* 左侧展示图片部分 */
+.preview_wrap {
+    width: 400px;
+    height: 590px;
+}
+.preview_img {
+    height: 398px;
+    border: 1px solid #ccc;
+}
+.preview_list {
+    position: relative;
+    height: 60px;
+    margin-top: 60px;
+}
+.list_item {
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+}
+.list_item li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    border: 2px solid transparent;
+    margin: 0 2px;
+}
+.list_item .current {
+    border: 2px solid #e33333;
+}
+.arrow_pre,
+.arrow_next {
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 32px;
+}
+.arrow_pre {
+    left: 0;
+    background: url(../img/arrow-prev.png) no-repeat;
+}
+.arrow_next {
+    right: 0;
+    background: url(../img/arrow-next.png) no-repeat;
+}
+/* 右侧详情信息 */
+.iteminfo_wrap {
+    width: 718px;
+}
+.suk_name {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.news {
+    height: 33px;
+    font-size: 12px;
+    color: #e12228;
+}
+.summary_price,
+.summary_promotion {
+    position: relative;
+    padding: 10px 0;
+    background: #fee9eb;
+}
+.summary dl {
+    overflow: hidden;
+}
+.summary dt {
+    width: 60px;
+    line-height: 36px;
+    padding-left: 10px;
+}
+.summary dt,
+.summary dd {
+    float: left;
+}
+.price {
+    font-size: 24px;
+    color: #e12228;
+}
+.summary_price a {
+    color: #e12228;
+}
+.remark {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.summary_promotion {
+    padding-top: 0;
+}
+.summary_promotion dd {
+    width: 450px;
+    line-height: 36px;
+}
+.summary_promotion em {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background: #e12228;
+    color: white;
+}
+.summary_support dd{
+    line-height: 36px;
+}
+.choose_color a{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f7f7f7;
+    border: 1px solid #ededed;
+}
+.choose_color .current {
+    border: 1px solid #e12228;
+}
+.choose_version {
+    margin: 10px 0 ;
+}
+.choose_version a,
+.choose_type a{
+    display: inline-block;
+    height: 32px;
+    padding: 0 12px;
+    line-height: 32px;
+    text-align: center;
+    background: #f7f7f7;
+    border: 1px solid #ededed;
+}
+.choose_version .current,
+.choose_type .current {
+    border: 1px solid #e12228;
+}
+/* 加入购物车部分 */
+.choose_btns {
+    margin-top: 20px;
+}
+.choose_num {
+    position: relative;
+    width: 50px;
+    height: 46px;
+}
+.choose_btns .shopbtn {
+    width: 142px;
+    height: 46px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background: #c81623;
+}
+.choose_num input {
+    width: 33px;
+    height: 44px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.choose_num .add,
+.choose_num .reduce {
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+}
+.choose_num .add {
+    top: 0;
+}
+.choose_num .reduce {
+    bottom: 0;
+    cursor: not-allowed;
+}
+/* 详情盒子 */
+
+/* 左侧边栏 */
+.aslide {
+    width: 208px;
+    border: 1px solid #ccc;
+}
+.tab_list {
+    height: 34px;
+}
+.tab_list li {
+    float: left;
+    height: 33px;
+    background: #f1f1f1;
+    text-align: center;
+    line-height: 33px;
+    border-bottom: 1px solid #ccc;
+}
+.tab_list .current {
+    background: white;
+    border-bottom: 0;
+    color: #e12228;
+}
+.first_tab {
+    width: 104px;
+}
+.secon_tab {
+    width: 103px;
+    border-left: 1px solid #ccc;
+}
+.tab_con {
+    padding: 0 10px;
+}
+.tab_con li {
+    border-bottom: 1px solid #ccc;
+}
+.tab_con li h5 {
+     /* 一行显示不开的情况下,最够用省略号展示 */
+     /* 一行内显示 */
+     white-space: nowrap;
+     /* 溢出隐藏 */
+     overflow: hidden;
+    /* 超出部分省略号显示 */
+     text-overflow: ellipsis;
+     font-weight: normal;
+}
+.aslide_price {
+    font-weight: 700;
+    margin: 10px 0;
+}
+.as_addcar {
+    display: block;
+    width: 88px;
+    height: 26px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 26px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+}
+
+/* 右侧详情部分 */
+.detail {
+    width: 978px;
+}
+.detail_tab_list {
+    height: 39px;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+}
+.detail_tab_list li {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.detail_tab_list .current {
+    color: white;
+    background: #c81623;
+}
+.item ul {
+    padding: 20px 0 0 20px;
+}
+.item li {
+    line-height: 22px;
+}
+.item p a {
+    float: right;
+    font-family: 'icomoon';
+    font-weight: 700;
+}
+.prodect_detail {
+    margin-bottom: 50px;
+}

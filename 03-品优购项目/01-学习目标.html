@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习目标</title>
+</head>
+<body>
+    1.会引入ico图标
+    2.能简单看懂网站优化的三大标签
+    3.能使用字体图标
+    4.能说出我们css属性的书写顺序
+
+
+    补:
+    1.基本上所有网站标题的小图标的路径都是在 官网后拼接  /favicon.ico
+
+    例:  https://www.douyu.com/favicon.ico
+
+    2.设置网站标题上的小图标分两步:
+    第一步,将favicon.ico放在根目录
+    第二步,在head之间引入 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    3.制作ico图标的步骤
+    第一步,拿到想要的图片
+    第二步,借助第三方网站:http://www.bitbug.net/   一般用16*16  32*32  48*48
+    
+    4.网站三大优化标签
+    1.title  google不超过35个中文  baidu不超过28个
+    2.keyword   主关键词出现三次,辅关键词出现一次
+    3.description  最先出现的字权重越高
+
+    5.字体图标使用流程
+    1.ui人员设计字体图标效果图(svg格式)
+    2.前端人员上传生成兼容性字体文件包  http://icomoon.io      阿里的  icon font 字库  http://www.iconfont.cn/
+    3.前端下载该包到本地
+    4.把字体文件包引入到html页面
+
+    6.字体图标实际开发的使用步骤
+    1.从icomoon.io网站选中想要的字体图标,然后将fonts文件夹拖入项目
+    2.定义字体样式  style里定义
+    
+     @font-face {
+      font-family: 'icomoon';
+      src:  url('fonts/icomoon.eot?7kkyc2');
+      src:  url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?7kkyc2') format('truetype'),
+        url('fonts/icomoon.woff?7kkyc2') format('woff'),
+        url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+} 
+    3.复制demo中的 
+    4.设置标签样式,font-family 为定义字体时的icomoon  然后设置字体大小与颜色
+    5.追加字体图标时,需要上传之前下载的selection.json文件, 新增图标后,将新的fonts文件夹替换掉项目中的fonts文件夹
+
+    7. logo优化
+    1).logo里面放一个h1标签,告诉搜索引擎这个地方很重要,目的是给logo提权
+    2).在h1中放一个链接,可以返回首页的,给链接一个大小跟背景图片
+    3).链接里要放网站名称,为了让搜索引擎收录我们,但是文字不显示出来
+    4).最后给链接一个title,这样鼠标放在logo上,就可以看到提示文字了
+
+    8.获得焦点 伪元素选择器 
+    input:focus 
+
+</body>
+</html>
