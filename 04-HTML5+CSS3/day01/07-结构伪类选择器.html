@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结构伪类选择器</title>
+    <style>
+        /* 选择ul的第一个孩子 然后还是li标签 li是第一个孩子的限定条件 如果第一个孩子不是li标签,则谁也选不出来*/
+        ul li:first-child {
+            color:  rgba(240, 158, 6, 0.712);
+        }
+        /* 选择ul的最后一个孩子  然后还是li标签  li是最后一个孩子的限定条件,如果最后一个孩子不是li,则谁也选不出来*/
+        ul li:last-child {
+            color: orangered;
+        }
+        /* 选出ul中的第二个孩子  然后还要是li标签 li是第二个孩子的限定条件,指出第二个孩子要是li标签,如果不是,则谁也选不出来*/
+        ul li:nth-child(2) {
+            color: skyblue;
+        }
+        /* 根据关键字选择  奇数: 还要是li标签*/
+        ul li:nth-child(odd) {
+            color: hotpink;
+        }
+        /* 权重12  用公式选前五个  还要是li标签*/
+        ul li:nth-child(-n+5) {
+            color: gray;
+        }
+
+        /* 可以不加限定条件 只是单纯的选第几个孩子 */
+        div :first-child {
+            color: orange;
+        }
+
+        /* 选出div里面  第一个span标签 */
+        div span:first-of-type {
+            color: hotpink;
+        }
+        /* 选出div里面 最后一个span标签 */
+        div span:last-of-type {
+            color: skyblue;
+        }
+        /* 选出div里面第二个span标签 */
+        div span:nth-of-type(2) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 之前学过的伪类选择器  :link :visited :hover :active  :focus (获得焦点时)-->
+    <!-- 常见的结构伪类选择器
+    E:first-child 匹配父元素中的第一个子元素E
+    E:last-child  匹配父元素中最后一个E元素
+    E:nth-child(n) 匹配父元素中的第n个子元素E  (下面是n的讲解)
+    E:first-of-type 指定类型E的第一个
+    E:last-of-type 指定类型E的最后一个
+    E:nth-of-type(n) 指定类型E的第n个
+    -->
+
+    <!-- E:nth-child(n)
+    1.n可以是数字,关键字,和公式
+    2.n是数字的话,就是选第几个
+    3.常见的关键字 even偶数  odd奇数  从1开始
+    4.如果n是公式,则从0开始计算   比如 -n+5  前五个    n+5 从5开始
+    5.第0个元素或者超出了元素的个数会被忽略
+    
+    -->
+    <ul>
+        <!-- <p>我是第一个孩子</p> -->
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li class="s">10</li>
+        <p>我是最后一个孩子,橘色失效,因为我不是li标签</p>
+    </ul>
+
+    <div>
+        <p>这是一个屁</p>
+        <span>我是span</span>
+        <span>我是span</span>
+        <span>我是span</span>
+    </div>
+</body>
+</html>

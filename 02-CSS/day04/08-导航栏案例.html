@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>导航栏案例</title>
-    <style> 
+    <style>
         * {
             margin: 0;
             padding: 0;
         }
+        
         .banner {
             width: 760px;
             height: 150px;
             background-color: pink;
             margin: auto;
         }
+        
         li {
             list-style: none;
         }
+        
         .nav {
-             width: 760px;
-             height: 32px;
-             margin: 0 auto;
-             background:url(images/nav_bg.jpg) repeat;
+            width: 760px;
+            height: 32px;
+            margin: 0 auto;
+            background: url(images/nav_bg.jpg) repeat;
         }
+        
         li a {
             display: inline-block;
             width: 80px;
@@ -35,16 +40,18 @@
             color: gray;
             background: url(images/button1.jpg) no-repeat;
         }
+        
         li a:hover {
             background: url(images/button2.jpg);
         }
+        
         .nav ul li {
             float: left;
             text-align: center;
-            
         }
     </style>
 </head>
+
 <body>
     <!-- 导航栏 一般是<li>包<a>的做法 -->
     <div class="banner">
@@ -61,4 +68,5 @@
         </ul>
     </div>
 </body>
+
 </html>

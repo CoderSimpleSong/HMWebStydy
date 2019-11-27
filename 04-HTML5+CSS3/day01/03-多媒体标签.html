@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多媒体</title>
+</head>
+<body>
+    <!-- audio  音频标签  支持格式有限, 主要支持 ogg,mp3,wav  流行的是ogg跟mp3 两个一起放-->
+    <!-- 属性:
+    1.controls:如果出现该属性,则向用户显示控件,比如播放按钮
+    2.autoplay:音频在就绪后马上播放  chrome禁止自动播放
+    3.loop: 每当音频结束时,重新开始播放
+    4.src: 音频url地址
+    -->
+    <audio src="media/snow.mp3" controls="controls" autoplay="autoplay" loop="loop">这是啥,音频?</audio>
+    <!-- 因为不同浏览器支持不同的格式,所以我们为同一个音频准备多个格式 如果该浏览器支持多个格式,则播放第一个音频-->
+    <audio controls="controls">
+        <source src="media/snow.mp3" type="audio/mpeg">
+        <source src="media/snow.ogg" type="audio/ogg">
+        您的浏览器不支持该音频的播放
+    </audio>
+
+
+    <!-- vedio  视频标签   支持格式有限  主要支持 ogg,mp4,webM 一般也是ogg跟MP4 -->
+    <video src="media/video.mp4" controls="controls" width="150" muted="muted" autoplay="autoplay" ></video>
+    <!-- 
+        属性:
+        1.autoplay: 自动播放  谷歌浏览器把自动播放禁用了 (可以自动播放,但是不能出声音,给视频加静音属性)
+        2.muted: 静音播放
+        3.loop: 循环播放
+        4.controls: 播放控制
+        5.src:视频地址
+        6.poster: 加载等待的换面图片,就是在不自动播放的情况下,封面图片
+     -->
+    <video controls="controls" width="100">
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.ogg" type="video/ogg">
+    </video>
+</body>
+</html>

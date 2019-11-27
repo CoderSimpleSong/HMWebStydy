@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新增表单</title>
+</head>
+<body>
+    <!-- 新增input属性的值 -->
+
+
+    <form action="">
+        <ul>
+            <li> <!-- 邮箱 -->
+                邮箱: <input type="email"> <br>
+            </li>
+            <li>
+                <!-- 网址 -->
+                网址: <input type="url" name="" id="">
+            </li>
+            <!-- 日期 -->
+            <li>日期:<input type="date" name="" id=""></li>
+            <!-- 时间 -->
+            <li>时间:<input type="time" name="" id=""></li>
+            <!-- 数字 max最大值  min 最小值  maxleght:最大字符数 step:每次增加多少-->
+            <li>数字:<input type="number" name="" id="" min="10" max="50" step="10"></li>
+            <!-- 手机号码 -->
+            <li>手机号码:<input type="tel" name="" id=""></li>
+            <!-- 搜索框 -->
+            <li>搜索框: <input type="search" name="" id=""></li>
+
+            <li>颜色: <input type="color" name="" id=""></li>
+            <li><input type="submit" value="提交"></li>
+        </ul>  
+    </form>
+
+
+    
+    <!-- 新增表单属性 -->
+    <form action="">
+        <!-- 1.required  必填 -->
+        用户名: <input type="text" name="" id="" required="required"> <br>
+
+        <!-- 2.placehold  占位文字 -->
+        密码: <input type="password" name="" id="" placeholder="请输入密码"> <br>
+
+
+        <!-- 3. autofocus  自动聚焦 -->
+        自动聚焦: <input type="text" name="" id="" autofocus> <br>
+
+        <!-- 4.autocomplete   自动完成,提示历史输入的东西 注意要写name属性   on/off-->
+        提示历史输入: <input type="text" name="username" id="" autocomplete="on"> <br>
+
+        <!-- 5. multiple    多选的 文件多选   -->
+
+        上传头像: <input type="file" name="" id="" multiple="multiple">  <br>
+        <input type="submit" value="提交">
+    </form>
+
+</body>
+</html>
