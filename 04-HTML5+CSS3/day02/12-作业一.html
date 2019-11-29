@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阴阳师下载</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .bgc {
+            position: relative;
+            width: 145px;
+            height: 287px;
+            margin: 50px;
+            background: url(media/bgc.png) no-repeat;
+        }
+        .bgc .ewm {
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            width: 105px;
+        }
+        .bgc .line {
+            position: absolute;
+            left: 13px;
+            top: 50px;
+            animation: move 2s linear 0s infinite alternate forwards;
+        }
+        @keyframes move {
+            0% {
+
+            }
+            100% {
+                transform: translate(0,95px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bgc">
+        <img src="media/ewm.png" alt="" class="ewm">
+        <img src="media/line.png" alt="" class="line">
+    </div>
+</body>
+</html>

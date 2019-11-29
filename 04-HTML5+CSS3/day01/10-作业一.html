@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美的</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .fl {
+            float: left;
+        }
+        .fr {
+            float: right;
+        }
+        .topnav {
+            height: 44px;
+            background: rgb(61, 146, 210);
+        }
+        .logo {
+            float: left;
+            width: 120px;
+            height: 44px;
+            background-image: url(media/index_service_sprite.png);
+            background-repeat: no-repeat;
+            background-size: 200px 80px;  /*设置背景图片的大小,默认是设置多大,图片设置为多大*/
+            background-position: -80px 0;  
+        }
+        .nav {
+            float: left;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .nav li {
+            float: left;
+        }
+        .nav a {
+            display: inline-block;
+            padding: 0 30px;
+            line-height: 44px;
+            font-size: 12px;
+            color: #cccccc;
+        }
+        .nav a:hover {
+            color: white;
+        }
+        .icon {
+            float:right
+        }
+        input {
+            outline: none;
+            border: none;
+        }
+        .news {
+            background: rgb(20, 59, 99);
+            font-size: 12px;
+            color: white;
+            text-align: center;
+        }
+        /*清除浮动*/
+        .clearfix:after {
+            visibility: hidden;
+            clear: both;
+            display: block;
+            content: ".";
+            height: 0
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="logo"></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">商家入驻</a></li>
+                    <li><a href="#">企业采购</a></li>
+                    <li><a href="#">全屋家电套购</a></li>
+                    <li><a href="#">会员福利社</a></li>
+                    <li><a href="#">美的分期</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <ul>
+                    <!-- 这部分不想调了 主要是用到了精灵图定位 以及transition动画 -->
+                    <li class="searchbox">
+                        <input type="text" name="" id="" placeholder="美的热水器">
+                        <i></i>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="news">
+            【通知】1、美的商城为美的集团官方渠道，请勿相信任何刷单信息。2、新疆部分区域无法快递正常发货，恢复时间待定。3、 因美的会员体系改版，10月26-29日期间美的积分将处于冻结状态。届时您将无法获得和消耗积分，感谢理解！
+        </div>
+    </header>
+</body>
+</html>

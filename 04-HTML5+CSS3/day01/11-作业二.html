@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: rgb(245, 245, 245);
+        }
+        li {
+            list-style: none;
+        }
+        .goods {
+            width: 174px;
+            height: 280px;
+            margin: 50px 100px;
+            padding: 20px 30px 0;
+            background: white;
+        }
+        .pro_img {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        .goods li {
+            position: relative;
+            text-align: center;
+        }
+        .goods li p {
+            padding: 30px 0 0 0;
+            font-size: 14px;
+            color: rgb(71, 71, 71);
+        }
+        .goods li h6 {
+            font-weight: normal;
+            font-size: 12px;
+            color: rgb(196, 196, 196);
+        }
+        .goods li h2 {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 60px;
+        }
+        .cover {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            transition: all .5s;
+            width: 100%;
+            height: 0;
+            background: #ff6700;
+        }
+        .goods li:hover {
+            -webkit-transform: translate3d(0, -2px, 0);
+            transform: translate3d(0, -2px, 0);
+        }
+        .goods li:hover .cover{
+            height: 75px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="goods">
+        <ul>
+            <li>
+                <div class="pro_img">
+                    <a href="#"><img src="media/nb.jpg" alt="" width="150"></a>
+                </div>
+                <p>小米电视4A 43英寸青春版</p>
+                <h6>全高清屏/人工智能语音</h6>
+                <h2>1499元 1699</h2>
+                <div class="cover">
+                    <a href="#">
+                        <span>一如既往的好,小米情怀</span>
+                        <span>来自于 惊喜 的评价</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

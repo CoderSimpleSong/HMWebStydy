@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3中的动画</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid orange;
+            /* 动画名称 */
+            animation-name: move;
+            /* 动画时间 */
+            animation-duration: 5s;
+            /* 规定动画的速度曲线,默认是ease  steps()  步长  动画分几步完成*/
+            animation-timing-function: linear;
+            /*  动画延时开始, 默认是0  不延时*/
+            animation-delay: 1s;
+            /* 动画播放次数,默认是1次,还有infinite 无线, 循环播放 */
+            animation-iteration-count: infinite;
+            /* 动画是否在下一周期逆向播放,alternate 逆向播放  默认是normal*/
+            animation-direction: alternate;
+            /* 动画是否正在运行或暂停 默认runing, 还有pause */
+            animation-play-state: running;
+            /*  动画结束后状态,  forwards保持,  backwards:回到起始*/
+            animation-fill-mode: forwards;
+
+
+            /* 动画简写
+            animation:动画名称 持续时间 运动曲线 何时开始 播放次数 是否反方向 结束状态
+             */
+        }
+        div:hover {
+            /* 动画是否正在运行或暂停 默认runing, 还有pause */
+            animation-play-state: paused;
+        }
+        @keyframes move {
+            /* 动画序列------定义不同的状态  from====0%   to======100%*/
+            /* 0% {
+                transform: translateX(0px);
+            } */
+            /* from {
+                transform: translate(0,0);
+            } */
+            /* 100% {
+                transform: translateX(1000px);
+            } */
+
+            /* to {
+                transform: translate(500px,500px);
+            } */
+            /* 百分比就是对整个动画时间的划分 */
+            0% {
+                transform: translate(0,0);
+            }
+            25% {
+                transform: translate(1000px,0);
+            }
+            50% {
+                transform: translate(1000px,500px);
+            }
+            75% {
+                transform: translate(0,500px);
+            }
+            100% {
+                transform: translate(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+   <!-- 
+       动画(animation)相比较过渡,动画可以实现更多变化,更多控制,连续自动播放等效果 
+       动画的基本使用:
+       1.定义动画  @keyframes + 动画名称 
+       2.使用动画  一定要写 animation-name:动画名称   animation-duration:持续时间
+
+       注意:
+       1.0%是动画的开始,100%是动画的完成,这样的规则就是动画序列
+       2.动画是使元素从一种样式逐渐变为另一种样式的效果,您可以改变任意多的样式任意多的次数。
+       3.form相当于0%  to相当于100%
+-->
+
+    <div>
+
+    </div>
+</body>
+</html>

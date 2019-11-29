@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旋转</title>
+    <style>
+        img {
+            width: 150px;
+            height: 150px;
+            border: 1px solid orange;
+            border-radius: 75px;
+            /* transform: rotate(150deg); */
+            transition: all 3s linear;
+        }
+        img:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        旋转重点:  transform:rotate(度数)
+        1.rotate里面跟度数,单位是deg,比如rotate(45deg)
+        2.角度为正时,顺时针, 角度为负时,为逆时针
+        3.默认旋转的中心点是元素的中心点
+     -->
+     <div><img src="media/pic.jpg" alt=""></div>
+</body>
+</html>
