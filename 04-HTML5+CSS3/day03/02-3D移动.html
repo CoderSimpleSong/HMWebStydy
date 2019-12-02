@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D移动</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid orange;
+            /* transform: translateX(100px); */
+            /* transform: translateY(100px); */
+            /* transform: translateX(100px) translateY(100px); */
+            /* transform: translateZ(100px); 看不出效果,要想看出效果要借助透视,单位跟px*/
+            /* 3d位移的简写方式, x,y,z  如果没有就写0 */
+            transform: translate3d(100px,100px,0);
+        }
+    </style>
+</head>
+<body>
+    <!-- 相比2D转换,3D位移多了一个Z轴的移动,transilateZ一般用px单位 -->
+    <div>
+
+    </div>
+</body>
+</html>

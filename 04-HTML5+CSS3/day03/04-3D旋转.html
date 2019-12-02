@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 300px;
+        }
+        img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid orange;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        img:hover {
+            /* 正值的话,从右边看 是顺时针  负值的话  从右边看 是逆时针旋转*/
+            /* transform: rotateX(360deg); */
+
+            /* 正值的话 从上面看是 逆时针旋转   负值的话  从上面看是 顺时针旋转 */
+            transform: rotateY(180deg); 
+
+            /* 正值就是顺时针旋转   负值就是逆时针旋转 */
+            /* transform: rotateZ(360deg); */
+
+            /* 这是简写,  x,y,z 表示旋转轴的矢量*/
+            /* transform: rotate3d(1,1,1,180deg); */
+        }
+    </style>
+</head>
+<body>
+    <img src="media/pig.jpg" alt="">
+</body>
+</html>
