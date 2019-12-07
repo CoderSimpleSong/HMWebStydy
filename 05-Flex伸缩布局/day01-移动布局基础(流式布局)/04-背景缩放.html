@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            background: url(images/apple50.jpg) no-repeat;
+            background-size: 50px;
+        }
+        div:nth-child(2) {
+            background: url(images/apple100.jpg);
+            background-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景缩放 background-size
+    background-size 属性规定背景图像的尺寸
+    backgroung-size: 背景宽度  背景高度个
+
+    取值: 1.像素  2.百分比(相对于父视图来说的)
+        3.cover:宽高中较小的一个等于盒子,可能会图片展示不全
+        4.contain:宽高中较大的一个等于盒子,可能会占不满盒子
+    -->
+
+    <div></div>
+    <div></div>
+</body>
+</html>

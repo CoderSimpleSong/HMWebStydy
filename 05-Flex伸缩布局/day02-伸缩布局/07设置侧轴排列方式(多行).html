@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            background: orange;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: space-between;
+        }
+        span {
+            width: 150px;
+            height: 150px;
+            background: orangered;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- align-content:设置侧轴上的子元素的排列方式(多行)
+     注: 只能用于子项出现换行的情况,在单行下使用无效
+    1. flex-start: 默认值在侧轴的头部开始排列
+    2. flex-end:  在侧轴的尾部开始排列
+    3. center: 在侧轴中间显示
+    4. space-around: 子项在侧轴平分剩余空间
+    5.space-between: 子项在侧轴先分布 在两头,再平分剩余空间
+    6. stretch : 设置子项元素高度平分父元素高度
+    -->
+
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+    </div>
+</body>
+</html>

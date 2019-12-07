@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设置主轴方向</title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            background: orange;
+            flex-direction: column; 
+        }
+        span {
+            width: 150px;
+            height: 150px;
+            background: orangered;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+        <!-- 主轴与侧轴
+        1.主轴默认是x方向  侧轴是y轴的方向
+        2.可以通过flex-direction 设置x或y为主轴  也可以设置x或y的正负方向的 -->
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>

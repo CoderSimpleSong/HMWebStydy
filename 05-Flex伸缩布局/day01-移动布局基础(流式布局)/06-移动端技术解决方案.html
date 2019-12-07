@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    1.移动端浏览器:
+    1)移动端浏览器基本以webkit内核为主,因此我们就考虑webkit兼容性问题
+    2).我们可以放心使用h5标签和css3样式
+    3).同时我们浏览器的私有前缀我们只需要考虑添加webkit即可
+
+    2.css初始化 normalize.css 
+    1).Normalize.css:保护了有价值的默认值
+    2).Normalize.css:恢复了浏览器的bug
+    3).Normalize.css:是模块化的
+    4).Normalize.css:拥有详细的文档
+
+    3.css3 盒子模型 box-sizing : border-box;
+    传统模式宽度计算: 盒子的宽度= css中设置的width + border + padding 
+    c3中的盒模型:  盒子的宽度= css中设置的宽度width 里面包含了border 和padding 
+                 也就是说,我们的css3中的盒子模型, padding 和 border 不会撑大盒子了
+
+
+                 <!--
+                     css3 盒子模型
+                    box-sizing:border-box;
+                     传统盒子模型
+                    box-sizing:content-box; 
+                
+                -->
+    
+    4.特殊样式
+      1).盒子模型
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      2).点击高亮我们需要清除  设置为 transparent  完成透明 比如a标签
+      -webkit-tap-highlight-color: transparent
+      3).在移动端浏览器默认的外观在iOS上加上这属性才能给按钮和输入框自定义样式
+      -webkit-appearance:none;
+      4).禁用长按页面时的弹出菜单
+      img,a { -webkit-touch-callout: none;}
+
+</body>
+</html>

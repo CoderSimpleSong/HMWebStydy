@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex子项常见属性</title>
+    <style>
+        section {
+            display: flex;
+            width: 60%;
+            height: 150px;
+            background: orange;
+            margin: 0 auto;
+        }
+        section div:nth-child(1){
+            width: 100px;
+            height: 150px;
+            background-color: skyblue;
+        }
+        section div:nth-child(2){
+            flex: 1;
+            background-color: hotpink;
+        }
+        section div:nth-child(3){
+            flex: 2;
+            background-color: yellow;
+        }
+        section div:nth-child(4){
+            width: 100px;
+            height: 150px;
+            background-color: brown;
+        }
+
+        nav {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: orange;
+        }
+        nav div {
+            flex: 1;
+            height: 50%;
+        }
+        nav div:nth-child(1) {
+            background-color: yellow;
+        }
+        nav div:nth-child(2) {
+            flex: 2;
+            order: 1;
+            background-color: yellowgreen;
+        }
+        nav div:nth-child(3) {
+            align-self: flex-end;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.flex子项分配 剩余空间  占得份数
+    2.align-self控制子项在侧轴的排列方式  取值:auto(继承align-item) flex-end/start
+    3.order属性定义子项的排列顺序(前后顺序) 默认值是0  取值越小越靠前
+ -->
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <nav>
+        <div></div>
+        <div></div>
+        <div></div>
+    </nav>
+
+</body>
+</html>

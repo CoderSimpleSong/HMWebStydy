@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>侧轴排列方式</title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            background: orange;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+        span {
+            width: 150px;
+            /* height: 150px; */
+            background: orangered;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--align-items:设置侧轴上的子元素的排列方式(单行)
+    1.flex-start:默认值 从上到下
+    2.flex-end: 下到上
+    3. center: 垂直居中
+    4.strech: 拉伸  但是使用时子盒子不要给高度
+    -->
+
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>

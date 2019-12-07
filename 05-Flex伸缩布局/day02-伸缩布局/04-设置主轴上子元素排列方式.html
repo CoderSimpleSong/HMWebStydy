@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主轴子元素排列方式</title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            background: orange;
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+        span {
+            width: 150px;
+            height: 100px;
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        justity-content:设置主轴上子元素的排列方式
+        1.flex-start:默认值   从头部开始,如果主轴是x轴,则从左开始,如果是y轴,从上开始
+        2.flex-end: 从尾部开始 
+        3.center:在主轴居中对齐 (如果主轴是x轴则 居中对齐)
+        4.space-around:平分剩余空间
+        5. space-between: 先两边贴边 再平分剩余空间 (重要)
+     -->
+
+
+
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>
