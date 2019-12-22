@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rem</title>
+
+    <style>
+        html {
+            font-size: 10px;
+        }
+        div {
+            /* font-size: 12px; */
+            background: skyblue;
+            width: 12rem;
+            height: 12rem;
+
+        }
+        p {
+            /* em是相对于父级的字体大小的单位 */
+            /* width: 10em;
+            height: 10em; */
+
+            /* rem是相对于html元素的字体大小的单位 */
+            width: 10rem;
+            height: 10rem;
+            background: orange;
+            /* 3.rem的优势就是可以通过修改html中的文字大小来改变页面中元素的大小 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.让页面布局文字随屏幕大小变化而变化
+    2.高度也随屏幕大小变化而变化
+    3.随屏幕变化元素宽高等比例变化  -->
+
+    <!-- rem基础
+    1.rem是一个单位
+    2.rem(root em)是一个相对单位,类似于em,em是父元素字体大小
+    3.rem的基准是相对于html元素的字体大小 -->
+
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>

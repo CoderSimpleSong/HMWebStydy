@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>响应式布局方案</title>
+    <style>
+        .container {
+            height: 150px;
+            background: orange;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 767px) {
+            .container {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.响应式需要一个父级作为布局容器,来配合子级元素来实现变化效果
+    2.原理就是在不同屏幕下,通过媒体查询来改变这个布局容器的大小,再改变里面子元素的排列方式和大小,从而实现不同屏幕下,看到不同的页面布局和样式变化
+
+
+    平时我们的响应式尺寸划分:
+    1.超小屏幕(手机,小于768px): 设置宽度为100%
+    2.小屏幕(平板,大于等于768px): 设置宽度为750px (这里设置的比较小是为了在pad上面,左右有留白)
+    3.中等屏幕(桌面显示器,大于992px): 设置宽度为970px (为了留白)
+    4.大屏幕(大于等于1200px): 宽度设置为1170px (留白) -->
+
+
+    
+    <div class="container">
+
+    </div>
+</body>
+</html>

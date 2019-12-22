@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flexible+rem 适配方案</title>
+</head>
+<body>
+    
+    <!-- 优势 
+    
+        1.相对于 less + rem + 响应式来说, flexible.js +rem  再也不用写不同屏幕下的媒体查询,只要屏幕宽度变了布局就会发生变化,比媒体查询还要敏感.
+        
+        原理: 
+        他把当前设备的屏幕尺寸评分为十等分, 每一份的值作为html的字体大小
+        页面元素的rem值: 页面元素的px值  / 每一份的值
+    
+    -->
+
+    利用cssrem插件做辅助转换工具; 它默认的html字体大小为16px 
+    16px --- > 1rem 
+    修改默认的设置,在设置中直接搜索cssroot 修改为设计稿宽度的1/10  重启vscode
+    command + , 快速打开设置
+
+
+    <!--  注意:
+        控制屏幕超过750(实际宽度大于理想宽度的条件, 定死html中的font-size)
+    
+    -->
+</body>
+</html>

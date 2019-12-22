@@ -1,0 +1,123 @@
+
+@import "common";
+
+@baseFont: 50;
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+body {
+    width: 15rem;
+    min-width: 320px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    padding: 0  40rem / @baseFont;
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15rem - 80rem / @baseFont;
+    height: 128rem / @baseFont;
+    min-width: 320px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fff;
+    .bu {
+        width: 100%;
+        background: #fff;
+        height: 40rem / @baseFont;
+    }
+    a {
+        width: 208rem / @baseFont;
+        height: 88rem / @baseFont;
+        border-radius: 8rem / @baseFont;
+        line-height: 88rem / @baseFont;
+        font-size: 30rem / @baseFont;
+        text-align: center;
+        color: #fff;
+        background: #fddf00;
+    }
+    a:nth-of-type(1) {
+        background: #003a9b;
+    }
+}
+.container {
+    padding-top: 128rem / @baseFont;
+    .tit {
+        line-height: 95rem / @baseFont;
+        h3 {
+            display: inline-block;
+            font-size: 40rem / @baseFont;
+            color: #333333;
+        }
+        span {
+            font-size: 30rem / @baseFont;
+            color: #999999;
+        }
+    }
+    .row {
+        display: flex;
+        margin: 10rem / @baseFont 0;
+        justify-content: space-between;
+        a {
+            width: 208rem / @baseFont;
+            height: 310rem / @baseFont;
+            border: 1px solid #eee;
+            border-radius: 8rem / @baseFont;
+            img {
+                width: 100%;
+                height: 142rem / @baseFont;
+            }
+            .goods {
+                position: relative;
+                height: 168rem / @baseFont;
+                img {
+                    margin-left: 25rem / @baseFont;
+                    width: 30rem / @baseFont;
+                    height: 20rem / @baseFont;
+                    vertical-align: middle;
+                }
+                span {
+                    position: absolute;
+                    left: 25rem /  @baseFont;
+                    bottom: 20rem / @baseFont;
+                    font-size: 30rem / @baseFont;
+                    color: #e4007b;
+                }
+                .gw {
+                    position: absolute;
+                    right: 25rem / @baseFont;
+                    bottom: 20rem / @baseFont;
+                    width: 48rem / @baseFont;
+                    height: 40rem / @baseFont;
+                }
+            }
+        }
+    }
+    .content {
+        display: flex;
+        margin-bottom: 98rem / @baseFont;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        a {
+            width: 320rem / @baseFont;
+            height: 428rem / @baseFont;
+            margin-bottom: 20rem / @baseFont;
+            border: 1px solid #eee;
+            border-radius: 8rem / @baseFont;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="nest.css">
+</head>
+<body>
+    <!-- less嵌套: 
+    1.less嵌套. 后代选择器 子元素的样式直接写在父元素的里面就可以了
+    .header {
+        a{
+
+        }
+    }
+
+
+    2.交集选择器| 为类选择器| 伪元素选择器
+    内层选择器的前面没有&符号,则它被解析为父选择器的后代
+    如果有&符号,他就被解析为父元素自身或父元素的伪类
+    
+    .header {
+        a{
+            &:hover {
+
+            }
+        }
+    }
+
+    .nav {
+        .logo{
+
+        }
+        nav的伪元素选择器
+        &::after {
+
+        }
+    }
+    -->
+
+    <div class="header">
+        <a href="">123</a>
+    </div>
+
+    <div class="nav">
+        <div class="logo">
+            sj
+        </div>
+    </div>
+</body>
+</html>

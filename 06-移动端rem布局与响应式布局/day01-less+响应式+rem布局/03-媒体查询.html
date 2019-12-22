@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>媒体查询</title>
+
+    <style>
+        /* 在我们屏幕上 并且最大的宽度是800像素 设置我们想要的样式 */
+        @media screen and (max-width: 800px){
+            body {
+                background: orange;
+            }
+        }
+        /* 小于等于500px */
+        @media screen and (max-width: 500px){
+            body {
+                background: orangered;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 媒体查询(Media Query) 是CSS3的新语法
+    @media 可以针对不同的屏幕尺寸设置不同的样式 -->
+
+    <!-- 语法: @media mediatype and|not|only (media feature) {  } -->
+    
+    <!-- mediatype 取值: 
+    all: 所有设备
+    print:用于打印机和打印预览
+    screen :用于电脑屏幕,平板电脑,智能手机等 -->
+
+    <!-- 关键字
+    and : 并且
+    not: 不
+    only : 只 
+    -->
+    <!-- 媒体特性 media feature
+    width: 定义输出设备中页面课件区域的宽度
+    min-width: 定义输出设备中页面可见的最小宽度
+    max-width: 定义输出设备中页面最大可见区域宽度
+    
+    -->
+</body>
+</html>
