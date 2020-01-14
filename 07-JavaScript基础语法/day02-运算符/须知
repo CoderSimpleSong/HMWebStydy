@@ -1,0 +1,4 @@
+switch与if else if的区别
+1.一般key有固定值的时候可以用switch,判断范围时,用if else if 
+2.if else if 执行顺序是从上往下执行的,但是switch是直接匹配的,switch的效率会高一些
+3. 当分支比较少的情况下, if esle if 的效率会高一些,反之,用switch

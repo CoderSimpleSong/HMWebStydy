@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var num = prompt('请输入班级总人数');
+        var sum = 0;
+        var ave = 0;
+        for (let index = 1; index <= num; index++) {
+            sum += prompt('请输入第' + index + '个数') - 0;
+            if (index == num) {
+                ave = sum / index;
+            }
+        }
+        console.log(sum,ave);
+        
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
