@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //函数的使用分为两步: 声明函数 和调用函数
+        //1.  声明函数
+        //function 是我们声明函数的关键字,就是oc中的方法(命名函数)
+        //函数声明的另外一种方式:函数表达式
+
+        /* var 变量名 = function() {};
+        这种函数称为匿名函数 调用 变量名();
+        这种函数声明方式跟声明变量差不多, 只不过变量里面存的是值, 而函数表达式存储的是函数
+            (指向函数的指针 ? ) 也可以传递参数 */
+
+        /* function 函数名(){
+            函数体
+        } */
+        function sayHi() {
+            console.log('hi');
+        }
+        //2.调用函数
+        sayHi();
+
+        //带有参数的函数,在函数声明的小括号里是形参(形式上的参数),形参是用来接收实参的
+        /* function 函数名(形参1, 形参2) {
+            函数的形参可以有,也可以没有,原则上形参数量没有限制
+        }
+        //函数调用时的小括号里是实参(实际的参数)
+        函数名(实参1,实参2); */
+        //形参的默认值为Undefined
+        /* 
+        如果实参的个数多于形参的个数,则会取到形参的个数
+        如果实参的个数小于形参的个数,则未接收到实参的形参值为Undefined. 
+         */
+
+
+        /* 
+        带有返回值的函数,是通过return语句来实现,
+        return只能返回一个值,如果以逗号分隔多个返回值,则返回最后一个值,
+        如果一个函数没有return,则它的返回值是Undefined
+        function函数值(){
+            reture 需要返回的结果;
+        }
+         */
+
+        function getSum(num1, num2) {
+            return num1 + num2;
+        }
+        console.log(getSum(10, 8));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

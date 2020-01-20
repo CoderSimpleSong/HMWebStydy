@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    
+        var arr = [1,2,3];
+        //数组中的增  两种方式:  
+        //1.修改length长度      length属性是可读写的
+        //修改了length之后,可以实现数组的扩容,默认值是Undefined 
+        /* arr.length = 4;   
+        console.log(arr[3]); 
+        console.log(arr); */
+        
+        //2. 通过修改数组索引号的方式  实现新增
+        /* arr[3] = 20;
+        console.log(arr); */
+        
+        //数组的 修改元素
+        /* arr[0] = 100;
+        console.log(arr); */
+
+
+        //数组删除元素  核心思想就是生成新的数组
+        //将下列数组中的0拿出来,剩余的元素生成一个新的数组
+        var arr = [2,0,6,1,77,0,52,0,25,7];
+        var newArray = [];
+        for (let index = 0; index < arr.length; index++) {
+            if (arr[index] !== 0) {
+                newArray[newArray.length] =  arr[index];
+            }
+        }
+        console.log(newArray);
+        arr.splice(0,1);
+        console.log(arr);
+        
+        
+
+        //案例   将1-10放入数组
+        /* var array = [];
+        for (let index = 0; index < 10; index++) {
+            array[index] = index + 1;
+        }
+        console.log(array); */
+
+
+        
+        
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

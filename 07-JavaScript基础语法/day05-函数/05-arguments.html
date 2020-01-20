@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //arguments 实际是当前函数的一个内置对象,所有函数中都设置了一个arguments对象,argumens对象中存储了传递的所有实参(就像是oc方法中都带有一个self,表示自己)
+
+        function getSum() {
+            //arguments中存储了所有的实参,arguments展示是用一个伪数组,因此可以进行遍历,伪数组具有以下特点:
+            /* 
+            1.具有length属性,可以用来遍历
+            2.按索引方式存储数据
+            3.不具有数组的push,pop等方法
+             */
+            console.log(arguments);
+
+        }
+        getSum(1, 2, 3);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

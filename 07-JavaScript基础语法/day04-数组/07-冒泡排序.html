@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var arr = [34,53,24,67,75,86,95,34,23,56,54,52,7,25];
+        //冒泡排序  两两相比较,第一轮挑选出最值,第二轮挑选出第二个最值,以此类推
+
+        //外层循环管躺数  5个数比较4趟   14个数比较13趟
+        for(var i = 0; i < arr.length - 1; i++){
+            //内层循环管比较次数  核心就是 第i趟比较arr.length - i - 1次
+            for(var j = 0; j < arr.length - i - 1; j ++){
+                if (arr[j] > arr[j+1]) {
+                    var temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        console.log(arr);
+        
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

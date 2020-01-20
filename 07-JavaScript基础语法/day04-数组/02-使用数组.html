@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script>
+        /* 
+        创建数组的两种方式:1.new方式  2. 利用数组字面量创建数组
+        */
+        //利用new创建数组
+        var arr = new Array();
+        
+        //利用数组字面量创建数组   这种更喜欢用的  创建一个空的数组
+        var array = [1,2,3,4,'sj',true];
+        
+
+        //获取数组元素
+        console.log(array[4]);
+
+        //遍历数组
+        for (let index = 0; index < array.length; index++) {
+            console.log(array[index]);  
+        }
+
+        //例:
+        var sum = 0;
+        var ave = 0;
+        var countArr = [2,6,1,7,4];
+        for (let index = 0; index < countArr.length; index++) {
+            sum += countArr[index];
+        }
+        ave = sum / countArr.length;
+        console.log('sum = ' + sum + '   ave = ' + ave);
+        
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

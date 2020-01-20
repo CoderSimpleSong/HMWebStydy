@@ -4,6 +4,8 @@ alert('如果我是dj你会爱我吗');
 /* alert('如果我是dj你会爱我吗');
 alert('如果我是dj你会爱我吗');
 alert('如果我是dj你会爱我吗'); */
+
+//log 如果想要同时输出多个变量,用逗号隔开
 console.log('我是宋大大');
 prompt();
 
